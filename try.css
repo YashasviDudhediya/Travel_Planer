@@ -1,0 +1,331 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh; /* Allow the body to grow beyond the viewport */
+  font-family: Arial, sans-serif;
+  background-color: #ffffff;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+/* Video Container */
+.video-container {
+  position: relative;
+  width: 100%;
+  min-height: 60vh; /* Ensure the video container doesn't force height restrictions */
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 60px;
+}
+
+/* Videos */
+video {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: opacity 1s ease;
+}
+
+/* Navbar Styles */
+.video-navbar {
+  position: absolute;
+  top: 20px;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 7px 20px;
+  z-index: 10;
+}
+/* Fixed Navbar */
+#navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  transition: background-color 0.3s ease;
+  z-index: 100; /* Ensure it stays above other elements */
+  background-color: transparent; /* Default background color */
+}
+
+/* Navbar Background on Scroll */
+#navbar.scrolled {
+  background-color: white; /* White background when scrolled */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow */
+}
+
+#navbar.scrolled a {
+  color: black; /* Change link text color to black on scroll */
+}
+
+#navbar.scrolled .hamburger {
+  color: black; /* Change hamburger icon color to black on scroll */
+}
+
+
+/* Logo */
+.logo {
+  width: 150px;
+  height: auto;
+}
+#navbar.scrolled .logo {
+  content: url('./images/logoBlack.png');
+  width: 130px;
+  height: auto;
+}
+/* Navigation Menu */
+#menu {
+  display: flex;
+  list-style: none;
+  gap: 15px;
+}
+
+#menu li a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 8px 12px;
+  /* background-color: rgba(99, 99, 99, 0.5); */
+  border-radius: 20px;
+  transition: 0.7s ease, color 0.3s ease;
+}
+
+#menu li a:hover {
+  background-color: #818181;
+  /* transition: 1.5s; */
+  /* color: black; */
+}
+
+/* Hamburger Menu */
+.hamburger {
+  display: none;
+  font-size: 24px;
+  color: white;
+  cursor: pointer;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+  #menu {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 60px;
+      right: 20px;
+      background-color: rgba(72, 72, 72, 0.8);
+      padding: 10px;
+      border-radius: 5px;
+  }
+
+  #menu.show {
+      display: flex;
+  }
+
+  .hamburger {
+      display: block;
+  }
+}
+
+/* Heading Style */
+h1 {
+  position: absolute;
+  z-index: 10; /* Ensure it's above the videos */
+  font-size: 36px;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  width: 30%; /* Full width for alignment */
+  top: 60%; /* Move it to the middle vertically */
+  left: 20%; /* Move it to the middle horizontally */
+  transform: translate(-50%, -50%); /* Adjust the alignment exactly to the center */
+  padding: 10px 20px; /* Optional: add some padding around the text */
+  border-radius: 10px; /* Optional: rounded corners */
+}
+
+/* Styling for the search bar */
+input#searchInput {
+    position: absolute;
+    z-index: 10;
+    font-size: 20px;
+    text-align: left;
+    width: 40%;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: black;
+    padding: 10px 20px;
+    border-radius: 50px;
+    border: none;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+button#searchButton {
+    position: absolute;
+    z-index: 10;
+    margin-left: 1120px;
+    margin-top: 87px;
+    width: 70px;
+    padding: 9px;
+    border: none;
+    border-radius: 28px;
+    background-color: #000;
+    color: white;
+    cursor: pointer;
+}
+
+.card{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+#blog-heading{
+  
+  color: black;
+  /* margin-top: 50px;
+  margin-bottom: 50px; */
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size:30px;
+}
+#nav-down{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+  list-style-type: none;
+  font-size: 17px;
+
+}
+
+#option{
+
+  text-decoration: none;
+  color: #000000;
+  /* background-color: #acabab; */
+  padding: 10px;
+  border-radius: 30px;
+}
+#option:hover{
+  background-color: #bdbdbd;
+  transition: 0.7s ease, color 0.3s ease;
+}
+#option1{
+  text-decoration: none;
+  color: white;
+  background: #000;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+
+#card-container{
+display: grid;
+gap: 6rem;
+grid-template-columns: repeat(4, 1fr); /* Defines 4 equal columns */
+justify-content: center; /* Ensures items are centered horizontally */
+/* width: fit-content; Ensures the container wraps tightly around the cards */
+margin: 0 auto;
+}
+/* @media(min-width:650px){
+  #card-container{
+      grid-template-columns: repeat(2,1fr);
+  }
+}
+@media(min-width:1080px){
+  #card-container{
+      grid-template-columns: repeat(3,1fr);
+  }
+}
+@media(min-width:250px){
+  #card-container{
+      grid-template-columns: repeat(1,1fr);
+  }
+} */
+.card1 {
+  width: 250px;
+  height: 350px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+ 
+}
+.card1-img:hover {
+  transform: scale(1.1) translateY(-10px); /* Slightly larger and moves up */
+  z-index: 2; /* Ensures the image comes to the front */
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.3); /* Optional: Enhance depth with shadow */
+}
+
+.card1-img {
+  width: 100%;
+height: 150px; /* Set the desired height */
+object-fit: cover; /* Ensures the image fills the space while maintaining aspect ratio */
+display: block;
+border-bottom: 1px solid #ddd;
+transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card1-content {
+  padding: 16px;
+  text-align: center;
+  display: flex;
+  flex-direction:column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.card1-heading {
+  font-size: 1.5rem;
+  margin: 0 0 8px;
+}
+
+.card1-text {
+  font-size: 1rem;
+  color: #424242;
+}
+#card1-button{
+  width: 70px;
+  height: 30px;
+  color: white;
+  background-color: black;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+/* About Section */
+.about-section {
+  background-color: #b4b4b4; /* Light background for contrast */
+  padding: 50px 20px;
+  text-align: center;
+  margin-top: 40px;
+}
+
+.about-section h2 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 20px;
+  font-family: 'Arial', sans-serif;
+}
+
+.about-section p {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
+  max-width: 800px;
+  margin: 0 auto 20px auto; /* Center text */
+}
+
+.about-section p:last-child {
+  margin-bottom: 0; /* Remove bottom margin for the last paragraph */
+}

@@ -1,0 +1,317 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Travsolo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+      body{
+        margin-bottom: 40px;
+      }
+        #upper{
+          
+          width: 100%;
+          padding: 40px;
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: center;
+          gap: 10px;
+        }
+        .container-fluid{
+          margin-left: 40px;
+        }
+        #carouselExample{
+          width: 700px;
+         
+        }
+        iframe{
+          width: 700px;
+          height: 55vh;
+         
+        }
+        #si{
+        width: 300px;
+        height: 250px;
+      }
+        section{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin-top: 20px;
+      }
+        #information{
+          padding: 40px;
+        }
+        .info{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+      }
+        .info_block{
+        display: flex;
+        flex-direction: row;
+        gap: 15px;
+      }
+     
+    #loc{
+      width: 25px;
+    }
+    #mar{
+      padding: 20px;
+    }
+    .list-group-item {
+        cursor: pointer;
+      }
+      .grid img {
+        width: 100%;
+       
+        border-radius: 8px;
+      }
+      .description {
+        text-align: center;
+        margin-top: 10px;
+      }
+      .carousel-inner{
+        width: 700px;
+        height: 410px;
+      }
+    </style>
+  </head>
+  <body class="bg-body-tertiary">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary ">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"> <img src="./symbols/location.png" alt="loc" id="loc">Rishikesh</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#intro">Introduction</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#history">History</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#places">Places</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#food">Food</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    
+    <!-- carousel -->
+     <div id="upper">
+      
+    <div id="carouselExample" class="carousel slide">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="./images/rishikesh1.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="./images/rishikesh2.jpg " class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="./images/rishikesh3.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="./images/rishikesh4.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="./images/rishikesh5.jpg" class="d-block w-100" alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <div class="col-md-6">
+      <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d55235.6388216746!2d78.2294089949136!3d30.08767232457314!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39093e67cf93f111%3A0xcc78804a6f941bfe!2sRishikesh%2C%20Uttarakhand!5e0!3m2!1sen!2sin!4v1737555294134!5m2!1sen!2sin" 
+         width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" 
+        allowfullscreen="" 
+        loading="lazy" 
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+  </div>
+  <div id="information">
+  <div>
+    <h3 id="intro"> Rishikesh ☸️🏞️ – Where the Ganges Flows, and Souls Glow!</h3>
+    <p>The ☸️ (Dharma Wheel) symbolizes spirituality and enlightenment, while the 🏞️ (Mountain Landscape) represents the Himalayan beauty and adventure. Let me know if you’d like further variations!</p>
+        <p>Rishikesh, known as the "Yoga Capital of the World," is a serene town in the northern state of Uttarakhand, India. Nestled in the foothills of the Himalayas, it is a spiritual haven and a popular destination for yoga, meditation, and adventure sports. The town is situated on the banks of the sacred Ganges River, where visitors can experience tranquility and divinity. It is also famous for its iconic landmarks, such as the Laxman Jhula, Ram Jhula, and numerous ashrams offering spiritual and wellness retreats.</p>
+      <h3 id="history">History</h3>
+        <p>JRishikesh, located in the northern Indian state of Uttarakhand, is a town steeped in history, mythology, and spirituality. The name "Rishikesh" is derived from the Sanskrit word Hrishikesha, meaning "Lord of the Senses," a title of Lord Vishnu. According to Hindu mythology, the town was named after Lord Vishnu appeared to sage Raibhya Rishi as a reward for his penance. Mythological tales also associate Rishikesh with Lord Rama, who is believed to have performed penance here after defeating Ravana. It is said that Lakshman, Rama's brother, crossed the Ganges using a jute rope bridge at the site of the current Laxman Jhula, an iconic landmark of the town.</p>
+        <p>Since ancient times, Rishikesh has been a hub for spirituality and learning, attracting sages and seekers who meditated and studied the Vedas along the banks of the sacred Ganges River. It is considered the gateway to the Char Dham pilgrimage, leading to Gangotri, Yamunotri, Kedarnath, and Badrinath, further solidifying its importance in Hinduism. During the medieval period, saints like Adi Shankaracharya visited Rishikesh, revitalizing Hindu practices and establishing temples and ashrams that continue to serve as spiritual centers.</p>
+        <p>In modern history, Rishikesh gained international fame when The Beatles visited in 1968 to study transcendental meditation under Maharishi Mahesh Yogi, making it a global destination for yoga and meditation. Today, Rishikesh is known as the "Yoga Capital of the World" and hosts the International Yoga Festival annually, attracting visitors from all over the globe. It has also become a hub for adventure tourism, offering activities like white-water rafting, trekking, and bungee jumping. Blending its rich history, spiritual legacy, and natural beauty, Rishikesh continues to captivate travelers and devotees alike.</p>
+  </div>
+  <div>
+    <h3 id="places">Places You can visit in Rishikesh</h3>
+    <div class="info">
+      <section class="info_block">
+        <div>
+          <h5> 1)Lakshman Jhula</h5>
+          <section>
+            <div id="location_info">
+         <p>
+            Laxman Jhula is one of the most iconic landmarks in Rishikesh, standing as a symbol of the town's spiritual heritage. The bridge is a 450-feet-long suspension bridge that spans the Ganges River, connecting the towns of Tapovan and Jonk. It is believed to be the spot where Lord Lakshman, the brother of Lord Rama, crossed the river on a jute rope. According to local legends, Lord Lakshman meditated here after his journey, making the bridge a revered pilgrimage site. The surrounding area is dotted with temples, ashrams, and markets, offering a peaceful yet vibrant atmosphere.
+            </p>
+            
+            <p>The bridge offers spectacular views of the river and the surrounding Himalayan foothills. Visitors can walk across it, experiencing the cool breeze of the Ganges and the serenity of the landscape. Laxman Jhula has become a major tourist attraction not only for its historical and religious significance but also for its aesthetic appeal. The nearby temples, such as the Sri Bharat Mandir and the Laxman Mandir, further enhance the spiritual atmosphere of the place, making it a must-visit for both devotees and travelers seeking peace.
+
+            </p>
+            
+          </div>
+          <img src="./images/lakshaman.jpg" alt="Sample Image" id="si">
+          </section>
+        </div>
+      </section>
+      <!-- 2nd -->
+      <section class="info_block">
+        <div>
+          <h5> 2) Triveni Ghat</h5>
+          <section>
+            <div id="location_info">
+         <p>
+            Triveni Ghat is one of the most important and sacred ghats in Rishikesh, located on the banks of the holy Ganges River. The name "Triveni" refers to the confluence of three sacred rivers—Ganges, Yamuna, and Saraswati—making it a significant pilgrimage site. This ghat attracts thousands of devotees and pilgrims who visit to take a holy dip in the river, believed to wash away sins and purify the soul. It's a peaceful and spiritual spot, with temples and small shrines dedicated to various Hindu deities lining the riverbank.
+            </p>
+            
+            <p>The most popular ritual at Triveni Ghat is the Ganga Aarti, held every evening at dusk. During this ceremony, priests perform a ritual involving the offering of lamps, chanting of mantras, and singing hymns to honor the river goddess, Ganga. The sight of hundreds of floating oil lamps on the river, combined with the sounds of bells and chants, creates an enchanting atmosphere that captivates both locals and tourists. The ghat also offers a place for quiet reflection, making it a must-visit for anyone seeking spiritual solace in Rishikesh.
+         </p>
+            
+          </div>
+          <img src="./images/triveniGhat.jpg" alt="Sample Image" id="si">
+          </section>
+        </div>
+      </section>
+      <section class="info_block">
+        <div>
+          <h5> 3)The Beatles Ashram (Chaurasi Kutia)</h5>
+          <section>
+            <div id="location_info">
+         <p>
+            The Beatles Ashram, officially known as Chaurasi Kutia, is a serene and historically significant site in Rishikesh that gained international fame when the legendary rock band, The Beatles, stayed there in 1968. They came to learn transcendental meditation under Maharishi Mahesh Yogi, marking a transformative period in their lives and music. Located within the Rajaji National Park, the ashram features meditation huts, lecture halls, and dormitories that were once used by Maharishi’s disciples. The Beatles wrote several songs during their stay, some of which were included in their iconic "White Album," making the site a pilgrimage for music lovers and spiritual seekers alike.
+            </p>
+            
+            <p>Today, The Beatles Ashram is a peaceful retreat surrounded by lush greenery and wildlife. It has been restored as an eco-tourism destination, showcasing murals and graffiti art inspired by The Beatles and their music. Visitors can explore the meditation caves and halls while soaking in the tranquil environment and artistic vibe. The ashram provides an opportunity to connect with both nature and the legacy of a cultural revolution that blended spirituality with creativity.</p>
+            
+          </div>
+          <img src="./images/beatles.jpg" alt="Sample Image" id="si">
+          </section>
+        </div>
+      </section>
+      <section class="info_block">
+        <div>
+          <h5> 4) Neelkanth Mahadev Temple</h5>
+          <section>
+            <div id="location_info">
+         <p>
+            The Neelkanth Mahadev Temple, located about 32 kilometers from Rishikesh, is a sacred Hindu shrine dedicated to Lord Shiva. Nestled amidst the lush green hills of the Nar-Narayan range at an elevation of 1,330 meters, the temple is a popular pilgrimage site for devotees and visitors. According to Hindu mythology, this is the site where Lord Shiva consumed the deadly poison Halahala that emerged during the churning of the ocean (Samudra Manthan). The poison turned his throat blue, earning him the name "Neelkanth," which means "The Blue-Throated One." The temple's architecture features intricate carvings and a spiritual ambiance, making it a serene place for meditation and devotion.
+
+
+            </p>
+            
+            <p>The temple is particularly vibrant during the festivals of Mahashivaratri and Shravan, attracting thousands of devotees. A natural spring inside the temple allows pilgrims to take a holy dip before offering prayers. The journey to the Neelkanth Mahadev Temple is as enchanting as the temple itself, with winding roads surrounded by dense forests and views of the Himalayan foothills. The spiritual significance, coupled with its picturesque location, makes it a must-visit destination for those seeking tranquility and divine blessings.</p>
+            
+          </div>
+          <img src="./images/mahadev.webp" alt="Sample Image" id="si">
+          </section>
+        </div>
+      </section>
+  </div>
+</div>
+</div>
+
+<div class="container mt-4" id="food">
+  <h3>Food</h3>
+  <div class="row">
+    <!-- Vertical List -->
+    <div class="col-md-3">
+      <ul class="list-group">
+        <li class="list-group-item" data-target="1"><h5>Rishikesh Thali</h5></li>
+        <li class="list-group-item" data-target="2"><h5>Samosa</h5></li>
+        <li class="list-group-item" data-target="3"><h5>Singori</h5></li>
+       
+      </ul>
+    </div>
+
+    <!-- Dynamic Grid -->
+    <div class="col-md-9">
+      <div id="grid" class="row g-4">
+        <!-- Content dynamically injected here -->
+      </div>
+    </div>
+  </div>
+</div>
+
+
+ 
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      // Data for images and descriptions
+      const content = {
+        1: [
+          { img: './images/rishikeshF5.jpg', desc: 'Choti wala Restaurant, Rishikesh ' },
+          { img: './images/rishikeshF4.jpg', desc: '' },
+          { img: './images/rishikeshF6.jpg', desc: '' },
+        
+        ],
+        2: [
+          { img: './images/rishikeshF1.webp', desc: '' },
+          { img: './images/rishikeshF2.jpg', desc: '' },
+          { img: './images/rishikeshF3.jpg', desc: '' },
+        //   { img: './images/jaipurF8.jpg', desc: '' }
+        ],
+        3: [
+          { img: './images/rishikeshF7.jpg', desc: '' },
+          { img: './images/rishikeshF8.jpg', desc: '' },
+          { img: './images/rishikeshF9.jpg', desc: '' },
+        //   { img: './images/jaipurF12.jpg', desc: '' }
+        ],
+        
+      };
+
+      // Event listeners for the food list items
+      document.querySelectorAll('.list-group-item').forEach(item => {
+        item.addEventListener('click', () => {
+          const target = item.getAttribute('data-target');
+          const grid = document.getElementById('grid');
+          grid.innerHTML = ''; // Clear previous content
+
+          // Add new images and descriptions dynamically
+          content[target].forEach(item => {
+            const col = document.createElement('div');
+            col.className = 'col-md-6';
+            col.innerHTML = `
+              <div class="grid">
+                <img src="${item.img}" alt="${item.desc}" class="img-fluid rounded">
+                <p class="description">${item.desc}</p>
+              </div>
+            `;
+            grid.appendChild(col);
+          });
+        });
+      });
+    });
+  </script>
+  </body>
+</html>

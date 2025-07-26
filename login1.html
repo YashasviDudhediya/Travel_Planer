@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TraveSolo</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <div id="loginForm">
+        <nav>
+            <img src="./images/1-removebg-preview.png" alt="logo">
+            <div id="option">
+                <a href="index.html" id="home">Home</a>
+                <a href="registration.html" id="reg">Register</a>
+            </div>
+        </nav>
+        <div id="Container">
+            <form id="form" action="login.php" method="post">
+                <h2 id="heading">Welcome</h2>
+                <div id="input">
+                    <p>Email</p>
+                    <input type="email" name="email" placeholder="abc@email.com" id="Email" required>
+                </div>
+                <div id="input">
+                    <p>Password</p>
+                    <input type="password" name="password" placeholder="Password" id="pass" required>
+                </div>
+                <a href="#forgot" id="forgot">Forgot your password?</a>
+                <button type="submit">Log in</button>
+                <p id="or">or</p>
+                <button id="google">
+                    <img src="./images/google logo.png" alt="google" id="gooLog">
+                    <p>Log in with Google</p>
+                </button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

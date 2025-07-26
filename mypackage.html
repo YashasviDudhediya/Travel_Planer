@@ -1,0 +1,82 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>TravSolo</title>
+        <link rel="stylesheet" href="mypackage1.css">
+    </head>
+    <body>
+        <div class="top-links">
+            <a href="index.html">Home</a>
+            <a href="explore.html">Explore</a>
+        </div>
+
+
+        <div class="page-wrapper">
+            <div class="image-section">
+                <img src="./images/pn.jpg" alt="Travel Background">
+                <div class="overlay">
+                    <h1>Create <br>Your<br> Dream <br>Travel Package..</h1>
+                </div>
+            
+            </div>
+            <div class="form-container">
+                <form action="mypackage.php" method="POST" enctype="multipart/form-data">
+                    <div class="form-group">
+                        <label for="package-name">Package Name</label>
+                        <input type="text" id="packageName" name="packageName" placeholder="Enter package name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="description">Package Description</label>
+                        <textarea id="description" name="description" rows="4" placeholder="Provide a brief summary" required></textarea>
+                    </div>
+
+                    
+                    <div class="form-group">
+                        <label for="locations">Locations</label>
+                        <input type="text" id="locations" name="locations" placeholder="Enter locations (e.g., Manali, Shimla)" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="attractions">Key Attractions</label>
+                        <textarea id="attractions" name="attractions" rows="3" placeholder="Highlight must-visit spots"></textarea>
+                    </div>
+
+                    
+                    <div class="form-group">
+                        <label for="itinerary">Day-by-Day Itinerary</label>
+                        <textarea id="itinerary" name="itinerary" rows="6" placeholder="Provide a detailed day-wise plan"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="duration">Duration</label>
+                        <input type="text" id="duration" name="duration" placeholder="Enter duration (e.g., 7 Days, 6 Nights)" required>
+                    </div>
+
+                    
+                    <div class="form-group">
+                        <label for="price">Package Price</label>
+                        <input type="text" id="price" name="price" placeholder="Enter cost per person" required>
+                    </div>
+
+                    
+                    <div class="form-group">
+                        <label for="media">Upload Photos</label>
+                        <input type="file" id="media" name="media" multiple>
+                    </div>
+
+                    
+                    <div class="form-group">
+                        <label for="contact-name">Your Name</label>
+                        <input type="text" id="contact-name" name="name" placeholder="Enter your name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                    </div>
+                
+                    <button type="submit" class="submit-btn">Submit Package</button>
+                </form>
+            </div>
+        </div>
+    </body>
+    </html>

@@ -1,0 +1,319 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Travsolo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+      body{
+        margin-bottom: 40px;
+      }
+        #upper{
+          
+          width: 100%;
+          padding: 40px;
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: center;
+          gap: 10px;
+        }
+        .container-fluid{
+          margin-left: 40px;
+        }
+        #carouselExample{
+          width: 700px;
+         
+        }
+        iframe{
+          width: 700px;
+          height: 55vh;
+         
+        }
+        #si{
+        width: 300px;
+        height: 250px;
+      }
+        section{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin-top: 20px;
+      }
+        #information{
+          padding: 40px;
+        }
+        .info{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+      }
+        .info_block{
+        display: flex;
+        flex-direction: row;
+        gap: 15px;
+      }
+     
+    #loc{
+      width: 25px;
+    }
+    #mar{
+      padding: 20px;
+    }
+    .list-group-item {
+        cursor: pointer;
+      }
+      .grid img {
+        width: 100%;
+       
+        border-radius: 8px;
+      }
+      .description {
+        text-align: center;
+        margin-top: 10px;
+      }
+      .carousel-inner{
+        width: 700px;
+        height: 410px;
+      }
+    </style>
+  </head>
+  <body class="bg-body-tertiary">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary ">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"> <img src="./symbols/location.png" alt="loc" id="loc">  Panchavati, Nashik</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#intro">Introduction</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#history">History</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#places">Places</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#food">Food</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    
+    <!-- carousel -->
+     <div id="upper">
+      
+    <div id="carouselExample" class="carousel slide">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="./images/Pan5.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="./images/Pan2.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="./images/Pan3.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="./images/Pan4.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="./images/Pan6.jpg" class="d-block w-100" alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <div class="col-md-6">
+      <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14996.097364180321!2d73.77343386311958!3d20.00749308493009!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bddea54b213a9d7%3A0xc2f9ac85ac767a9d!2sPanchavati%2C%20Nashik%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1737542689227!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" 
+        allowfullscreen="" 
+        loading="lazy" 
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+  </div>
+  <div id="information">
+  <div>
+    <h3 id="intro">Panchavati: Where History, Mythology, and Spirituality Converge! 🌳✨</h3>
+    <p>Nestled in the heart of Nashik, Maharashtra, Panchavati is a land steeped in sacred history and divine legends. Known as the "Abode of the Five Banyan Trees", it served as a serene sanctuary for Lord Rama, Sita, and Lakshmana during their exile, as narrated in the epic Ramayana.
+
+      Discover the mystical Sita Gufa, marvel at the ancient beauty of the Kalaram Temple, and feel the divine energy flowing through the Godavari River, often referred to as the Ganga of the South.
+      
+      "Step into Panchavati and walk in the footsteps of divinity!" Whether you're a devotee, a history enthusiast, or a curious traveler, Panchavati promises an experience that's as enriching as it is enchanting.</p>
+
+      <h3 id="history">History</h3>
+        <p>Panchavati, located in Nashik, Maharashtra, is a region of immense historical and mythological significance, deeply rooted in the epic Ramayana. The name "Panchavati" comes from the Sanskrit words "Pancha" (five) and "Vata" (banyan trees), referring to the cluster of five sacred banyan trees believed to have existed in this area.</p>
+        <p>According to the Ramayana, Panchavati was the place where Lord Rama, Sita, and Lakshmana spent a significant part of their 14-year exile. It is here that Ravana's sister, Shurpanakha, encountered Rama and Sita, leading to a series of events that ultimately resulted in the abduction of Sita by Ravana. The region is also believed to have been the setting for the construction of Lakshmana's hut and the site of several important episodes, including the battle with Maricha, who came disguised as a golden deer.</p>
+  </div>
+  <div>
+    <h3 id="places">Places You can visit in Panchavati</h3>
+    <div class="info">
+      <section class="info_block">
+        <div>
+          <h5> 1) Sita Gufa (Sita's Cave)</h5>
+          <section>
+            <div id="location_info">
+         <p>
+          The Sita Gufa, also spelt as Sita Gumpha or Sita Gupha, is an important location associated with the Ramayana, an epic tale crucial to the narrative of modern Hinduism. It essentially translates to the Cave of Sita, who was the wife of Rama, the protagonist of Ramayana and heir apparent to the throne of Ayodhya. Rama is sentenced to a 14-year exile into the jungles, and he eventually spends many years in Panchavati, a region in what is now Nashik, Maharashtra. Within this place is the Cave of Sita, where it is said that the evil king of Lanka, Ravana, kidnapped Sita.
+            </p>
+            
+            <p>The cave today is a popular place for pilgrims who travel to Panchavati to get closer to the legend of the Ramayana. Located near the five sacred banyan trees in the area, you can enter the cave through the narrow staircase leading into it. Once inside, you will find an idol of Sita along with Rama and his brother, Lakshman. To the left, there is a cave with a Shiva Linga.</p>
+            
+          </div>
+          <img src="./images/Sita.jpg" alt="Sample Image" id="si">
+          </section>
+        </div>
+      </section>
+      <!-- 2nd -->
+      <section class="info_block">
+        <div>
+          <h5> 2) Kalaram Temple</h5>
+          <section>
+            <div id="location_info">
+         <p>
+          Kalaram Temple, is a Hindu temple in Nashik of Nashik district in Maharashtra, dedicated to the deity Rama. It is a temple situated in Panchavati area of the Nashik. The temple derives its name from a black statue of Rama. The literal translation of kalaram is "black Rama". The sanctum sanctorum also houses the statues of the goddess Sita and the god Lakshmana. Thousands of devotees visit the temple every day.
+            </p>
+            
+            <p>City buses and auto rickshaws are available from various corners of the city to reach the temple. The temple has a seventeen feet high wall of plain dressed stone which surrounds a well kept enclosure 245 feet long and 105 broad. It has seperate sabhamandap which is 75’*31’’*12 which is open from all sides. The temple has standing images of Lord Rama, Sita, Laxmana are of black stone and around 2 feet height. The Ramnavami festival is celebrated in Chaitra (March-April).</p>
+            
+          </div>
+          <img src="./images/Pan2.jpg" alt="Sample Image" id="si">
+          </section>
+        </div>
+      </section>
+      <section class="info_block">
+        <div>
+          <h5> 3) Kapaleshwar Temple</h5>
+          <section>
+            <div id="location_info">
+         <p>
+          Nashik's Kapaleshwar Temple is sacred to Lord Shiva. Hop, skip and jump away from the iconic Ramkund, the temple is quite unusual because, like other Shiva shrine, there is no statue of Lord Nandi, the gatekeeper of Shiva. According to the legends, the temple was the place where Lord Shiva performed penance after taking a holy dip in Ramkund to wash off his sin. The reason why there's no Nandi statue in the temple is because Lord Shiva regarded Nandi as a Guru or teacher and hence, there is no Nandi to guard the Kapaleshwar Temple.
+            </p>
+            
+            <p>To see the temple in its full pomp and show, do visit here during the Shivratri festival. Also the temple remains crowded with devotees on Monday.It is located quite close to the Ramkund, barely two kilometers away from the main bus stand. One can reach here, by taking a bus, taxi or three wheelers from anywhere in the city.</p>
+            
+          </div>
+          <img src="./images/kapaleshwar-mandir-nashik1.jpg" alt="Sample Image" id="si">
+          </section>
+        </div>
+      </section>
+      <section class="info_block">
+        <div>
+          <h5> 4) Ramkund</h5>
+          <section>
+            <div id="location_info">
+         <p>
+          Ramkund is located along the bank of Godavari River. This place is situated at a distance of 2 km from Central Bus stand.
+            </p>
+            
+            <p>This is the holiest spot in Nashik as it is believed to be the place where Lord Rama used to bathe. It contains the bone dissolving Asthivilaya Tirth. It was built by Chitrarao Khatav, a landholder of Khatav in Satara in 1696havrao and was repaired by Gopikabai, the mother of Madhavrao the fourth Peshva. Peoples bring ashes of their deceased relatives and immerse it in Asthivilay kund. Ashes of big personalities like Pandit Nehru, Indira Gandhi, Y B Chavan and others had been immersed at Ramkund</p>
+            
+          </div>
+          <img src="./images/pan5.JPG" alt="Sample Image" id="si">
+          </section>
+        </div>
+      </section>
+  </div>
+</div>
+</div>
+
+<div class="container mt-4" id="food">
+  <h3>Food</h3>
+  <div class="row">
+    <!-- Vertical List -->
+    <div class="col-md-3">
+      <ul class="list-group">
+        <li class="list-group-item" data-target="1"><h5>Budha Halwai</h5></li>
+        <li class="list-group-item" data-target="2"><h5>Samartha juice</h5></li>
+        <li class="list-group-item" data-target="3"><h5>Karad Bhel</h5></li>
+        <li class="list-group-item" data-target="4"><h5>Sayantara</h5></li>
+      </ul>
+    </div>
+
+    <!-- Dynamic Grid -->
+    <div class="col-md-9">
+      <div id="grid" class="row g-4">
+        <!-- Content dynamically injected here -->
+      </div>
+    </div>
+  </div>
+</div>
+
+
+ 
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      // Data for images and descriptions
+      const content = {
+        1: [
+          { img: './images/budha1.jpg', desc: 'Budha Halwai,behind Bhadrakali Mandir Road, Naikwadi Pura, Tivandha chowk, Nashik, Maharashtra 422001' },
+          { img: './images/budha2.jpg', desc: 'Budha Halwai' },
+          { img: './images/budha3.jpg', desc: 'Items' },
+          { img: './images/budha4.jpg', desc: 'Budha Halwai Special Jalebi' }
+        ],
+        2: [
+          { img: './images/Samartha1.jpg', desc: 'Samartha Juice Center , Pethe High School Compound, Raviwar Karanja, Panchavati, Nashik, Maharashtra 422001' },
+          { img: './images/Samartha2.jpg', desc: 'Items' },
+          { img: './images/Samartha3.jpg', desc: 'Shop' },
+          { img: './images/Samartha4.jpg', desc: '2 branch' }
+        ],
+        3: [
+          { img: './images/karadh1.avif', desc: 'Karadh BhelBhata , Dwarka Hotel, Dwarka, Nashik, Maharashtra 422011' },
+          { img: './images/karadh2.webp', desc: 'Femouse Bhata' },
+          { img: './images/karach3.avif', desc: 'Shop 2' },
+          { img: './images/karadh4.jpg', desc: 'Items' }
+        ],
+        4: [
+          { img: './images/sayantara1.jpg', desc: 'Sayantara , Shop No.5, Deshpande Building, Shop No.113, Bhadrakali Fruit Market, 1419, Bhadrakali Rd, Bhadrakali, Koknipura, Nashik, Maharashtra 422001' },
+          { img: './images/sayantara2.jpg', desc: 'Dish' },
+          { img: './images/sayantara3.jpg', desc: 'Cost' },
+          { img: './images/sayantara4.jpg', desc: 'Items' }
+        ]
+      };
+
+      // Event listeners for the food list items
+      document.querySelectorAll('.list-group-item').forEach(item => {
+        item.addEventListener('click', () => {
+          const target = item.getAttribute('data-target');
+          const grid = document.getElementById('grid');
+          grid.innerHTML = ''; // Clear previous content
+
+          // Add new images and descriptions dynamically
+          content[target].forEach(item => {
+            const col = document.createElement('div');
+            col.className = 'col-md-6';
+            col.innerHTML = `
+              <div class="grid">
+                <img src="${item.img}" alt="${item.desc}" class="img-fluid rounded">
+                <p class="description">${item.desc}</p>
+              </div>
+            `;
+            grid.appendChild(col);
+          });
+        });
+      });
+    });
+  </script>
+  </body>
+</html>

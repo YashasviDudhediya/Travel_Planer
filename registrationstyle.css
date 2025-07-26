@@ -1,0 +1,175 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* background-color: rgb(3, 3, 3); */
+    position: relative;
+    font-family: serif;
+    /* color: white; */
+
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    
+    background-image:url(./images/registerBack.jpg);
+   background-size: cover; /* Ensures the image covers the entire viewport */
+  background-position: center; /* Centers the image */
+  background-repeat: no-repeat; 
+  
+}
+#Container{
+    width: 100%;
+    height:100vh;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    width: 100%;
+    padding: 5px 14px;
+    /* background-color: rgb(255, 255, 255); */
+   
+}
+#option{
+    display: flex;
+    gap: 25px;
+}
+#home{
+    color:rgb(255, 251, 251);
+    /* border: 1px solid black; */
+    border-radius: 30px;
+    padding: 11px;
+    /* background-color: rgb(0, 0, 0); */
+    font-size: larger;
+    
+}
+#home:hover{
+    background-color:  #4e4e4e;
+    transition: 0.7s ease, color 0.3s ease;
+}
+#reg{
+   
+    color:rgb(255, 251, 251);
+    /* border: 1px solid black; */
+    border-radius: 30px;
+    padding: 11px;
+    /* background-color: rgb(0, 0, 0); */
+    font-size: larger;
+
+}
+#reg:hover{
+    background-color: #4e4e4e;
+    transition: 0.7s ease, color 0.3s ease;
+}
+img{
+    width: 150px; 
+    height: 10vh;
+    margin-left: 40px;
+}
+#reg{
+    margin-right: 40px;
+}
+
+#full{
+    display: flex;
+    justify-content: center;
+    align-items:center ;
+    flex-direction: column;
+    width: 100%;
+    height: 654px;
+    
+}
+#head{
+    color:rgb(7, 7, 7)
+}
+
+#regForm{
+    width: 30%;
+    height: 85vh;
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    /* align-items: center; */
+    flex-direction: column;
+    justify-content: space-between;
+    /* border: 0.3px solid black; */
+    border-radius: 25px;
+    padding: 40px;
+    text-decoration: none;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    box-shadow: rgba(255, 255, 255, 0.7 ) 0px 7px 29px 0px;
+}
+#head{
+    
+    margin-top: 10px;
+}
+#Common{
+   border: none;
+   border-bottom: solid 2px rgb(3, 3, 3);
+outline: none;
+background-color: transparent;
+
+}
+input[id="Common"] {
+    color: rgb(6, 6, 6);
+    font-size: 18px; 
+}
+input::placeholder{
+    color: rgb(114, 113, 113);
+}
+
+
+#dob{
+    display: flex;
+    border: none;
+    gap: 30px;
+    color: rgb(6, 6, 6);
+}
+#Glist{
+    display: flex;
+    gap: 30px;
+    
+}
+#Gender{
+    display: flex;
+    flex-direction: row;
+    gap:10px;
+    color: rgb(10, 10, 10);
+}
+
+#contry{
+    display: flex;
+    gap: 20px;
+    color: rgb(10, 10, 10);
+}
+button{
+    width: 100px;
+    height: 30px;
+    border: none;
+    border-radius: 8px;
+    background-color: rgb(89, 214, 89);
+    color: rgb(255, 255, 255);
+
+}
+button:hover{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+#sign{
+    display: flex;
+    flex-direction: row;
+    gap: 4px;
+    color: rgb(104, 103, 103);
+}
+#s{
+    color: rgb(12, 12, 12);
+    
+}
+a{
+    text-decoration: none;
+
+}

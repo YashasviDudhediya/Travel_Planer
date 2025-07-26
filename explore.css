@@ -1,0 +1,79 @@
+/* General body styling */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+  }
+  
+  /* Sidebar container */
+  .sidebar {
+    width: 200px; /* Adjust width to suit your design */
+    height: 100vh;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    position: fixed;
+    left: 0;
+    border:rgb(146, 146, 146) 1px solid;
+    border-top: none;
+  }
+  
+  /* Logo styling */
+  .logo img {
+    width: 140px; /* Adjust logo size */
+    height: auto;
+    margin-bottom: 30px; /* Add spacing from logo to navigation links */
+  }
+  
+  /* Styling for the links */
+  .nav-links a {
+    width: 180px;
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+    margin-bottom: 20px;
+    text-align: center;
+    display: block;
+    padding: 10px;
+    
+    border-radius: 0%;
+    transition: background-color 0.3s ease;
+  }
+
+  
+  .nav-links a:hover {
+    background-color:rgb(159, 159, 159); /* Light hover effect */
+  }
+  
+  /* Content area styling */
+  .content {
+    margin-left: 205px; /* Same width as sidebar */
+    /* padding: 20px; */
+    flex-grow: 1;
+  }
+  
+  a img{
+    width: 20px;
+  }
+  
+/* Explore page container */
+.explore-container {
+
+    /* position: fixed; */
+    right: 0;
+    top: 0;
+    width: calc(100% - 200px); /* Remaining width after sidebar */
+    height: auto; /* Keeps proportional scaling */
+    max-height: 100%;
+  }
+.explore-container img{
+
+  width:1290px;
+  height: 170vh;
+  margin-left: 15px;
+}
+  
+
+  

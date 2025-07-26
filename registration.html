@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TravSolo</title>
+    <link rel="stylesheet" href="registrationstyle.css">
+</head>
+<body>
+    <div id="Container">
+    <div id="full">
+        <nav>
+            <img src="./images/1-removebg-preview.png" alt="logo">
+            <div id="option">
+                <a href="index.html" id="home">Home</a>
+                <a href="login.html" id="reg">Log in</a>
+            </div>
+            
+       
+        </nav>
+        <form action="registration.php" id="regForm" method="post">
+            
+               
+                <h1 id="head">Registration</h1>
+                
+                <input type="text" placeholder="Enter your name" name="name" id="Common">
+                <input type="email" placeholder="Enter your email" name="email" id="Common">
+                <input type="password" placeholder="Enter the password"  id="Common">
+                <input type="password" placeholder="Conform password" id="Common">
+                
+                <input type="text" placeholder="Enter your Mobile Number" name="mobileNo" id="Common">
+                <div id="dob">
+                     <h4>DOB:</h4>
+                    <input type="date" name="date" id="bd">
+                </div>
+               
+                <div id="Gender">
+                   
+                    <h4>Gender :</h4>
+                    
+                    <label for="Gender" >Male</label>
+                    <input type="radio" name="gender">
+                    <label for="Gender" >Female</label>
+                    <input type="radio" name="gender">
+                    <label for="Gender" >Other</label>
+                    <input type="radio" name="gender">
+                
+                </div>
+                <div id="contry" ><label for="contry"><h4>Choose your Country:</h4></label>
+                <select name="country" >
+                    <option value="india">India</option>
+                    <option value="brazil">Brazil</option>
+                    <option value="America">America</option>
+                    <option value="japan">Japan</option>
+                    <option value="Philippines">Philippines</option>
+                    <option value="Yemen">Yemen</option>
+                </select></div>
+
+                <a href="">
+                <div id="sign"> 
+                <p>Have an account?</p>
+                <h3 id="s">SignIn</h3>
+            </div>
+        </a>
+                
+                <button>Submit</button>
+           
+        </form>
+    </div>
+</div>
+</body>
+</html>
